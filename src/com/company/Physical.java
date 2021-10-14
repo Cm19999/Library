@@ -1,11 +1,22 @@
 package com.company;
 
-public abstract class Physical extends LibraryArtifact{
+public abstract class Physical extends LibraryArtifact implements Borrow{
 
+
+    public Physical(String name) {
+        super(name);
+    }
 
     public abstract void consume();
 
-    public abstract void store(){
-        System.out.println("Put this with the books at "+ISBN);
+
+    @Override
+    public void borrowItem() {
+
+    }
+
+    @Override
+    public void returnItem() {
+
     }
 }

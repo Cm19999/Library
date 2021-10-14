@@ -1,4 +1,4 @@
 package com.company;
 
-public class Document extends LibraryArtifact{
-}
+//public class Document extends LibraryArtifact{
+//}
