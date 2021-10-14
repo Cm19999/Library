@@ -11,6 +11,10 @@ public abstract class Book extends Paper implements Borrow{
         super(name);
     }
 
+    public Book(String name) {
+        super(name);
+    }
+
 
     public void read(){
         System.out.println("Wow this is a good book");
@@ -20,6 +24,10 @@ public abstract class Book extends Paper implements Borrow{
 
     public void borrowItem(){
         System.out.println("You have borrowed a book");
+    }
+
+    public void returnItem() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+
     }
 
     public String getISBN() {return ISBN;}

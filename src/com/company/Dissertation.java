@@ -18,4 +18,6 @@ public class Dissertation extends Document implements Borrow{
         public void borrowItem(){
             System.out.println("You have borrowed a dissertation");
         }
+
+        public void returnItem(){};
 }

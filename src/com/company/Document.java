@@ -7,4 +7,8 @@ public class Document extends Paper{
     }
 
 
+    public void borrowItem(){};
+
+    public void returnItem(){};
+
 }
