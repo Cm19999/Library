@@ -1,6 +1,6 @@
 package com.company;
 
-public class Dissertation extends Document{
+public class Dissertation extends Document implements Borrow{
 
 
         Dissertation(String name){
@@ -15,4 +15,7 @@ public class Dissertation extends Document{
             System.out.println("Store this with the other dissertations");
         }
 
+        public void borrowItem(){
+            System.out.println("You have borrowed a dissertation");
+        }
 }

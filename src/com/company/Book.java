@@ -18,6 +18,9 @@ public abstract class Book extends Paper implements Borrow{
 
     public abstract void store();
 
+    public void borrowItem(){
+        System.out.println("You have borrowed a book");
+    }
 
     public String getISBN() {return ISBN;}
 

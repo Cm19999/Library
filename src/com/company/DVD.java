@@ -1,6 +1,7 @@
 package com.company;
 
-public class DVD extends LibraryArtifact{
+public class DVD extends Optical{
+
 
     DVD(String name){
         super(name);
@@ -13,4 +14,6 @@ public class DVD extends LibraryArtifact{
     public void store(){
         System.out.println("Put this with the other DVDs");
     }
+
+
 }
