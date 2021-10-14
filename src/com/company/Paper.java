@@ -10,8 +10,7 @@ public abstract class Paper extends Physical{
     }
 
 
-
-    public void consume(){
+    public void use(){
         System.out.println("Flicks through pages...");
     }
 

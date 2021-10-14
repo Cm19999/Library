@@ -7,7 +7,7 @@ public abstract class Physical extends LibraryArtifact implements Borrow{
         super(name);
     }
 
-    public abstract void consume();
+    public abstract void use();
 
 
     @Override
