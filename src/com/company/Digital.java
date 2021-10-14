@@ -1,4 +1,8 @@
 package com.company;
 
-//public abstract class Digital extends LibraryArtifact{
-//}
+public abstract class Digital extends LibraryArtifact{
+
+    Digital(String name){
+        super(name);
+    }
+}
