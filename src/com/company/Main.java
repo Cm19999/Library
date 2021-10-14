@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<LibraryArtifact> libraryCollection = new ArrayList<>();
-        
+
 
         Paperback p1 = new Paperback("DVD","1");
         p1.use();
