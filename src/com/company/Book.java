@@ -9,6 +9,7 @@ public abstract class Book extends Paper implements Borrow{
 
     public Book(String name,String ISBN) {
         super(name);
+        this.ISBN=ISBN;
     }
 
     public Book(String name) {
