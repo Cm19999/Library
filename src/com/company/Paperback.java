@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Paperback extends Book implements Borrow{
 
-
+    private String objectType = "Paperback";
 
     Paperback(String name,String ISBN){
         super(name,ISBN);
@@ -24,12 +24,9 @@ public class Paperback extends Book implements Borrow{
 
     }
 
-    public void returnItem(LibraryArtifact book) {
-        //System.out.println(this.getClass());
-        System.out.println(libraryCollection);
-        libraryCollection.add(book);
-        System.out.println(libraryCollection);
-
+    public String returnItem(LibraryArtifact book) {
+        System.out.println(this.getName()+this.getISBN());
+        return (objectType+" Name: \""+this.getName()+"\""+" ISBN: " +this.getISBN());
     }
 
 
