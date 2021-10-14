@@ -9,6 +9,8 @@ public abstract class Paper extends Physical{
         super(name);
     }
 
+
+
     public void consume(){
         System.out.println("Flicks through pages...");
     }
@@ -22,4 +24,7 @@ public abstract class Paper extends Physical{
         Author = author;
     }
 
+    public int getPages() {return pages;}
+
+    public void setPages(int pages) {this.pages = pages;}
 }

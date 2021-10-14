@@ -7,7 +7,7 @@ public abstract class LibraryArtifact {
     public LibraryArtifact(String name){this.name = name;}
 
 
-    public abstract void store();
+
 
 
     public String getName() {

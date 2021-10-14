@@ -2,9 +2,12 @@ package com.company;
 
 public abstract class Book extends Paper implements Borrow{
 
-    private String ISBN;
 
-    public Book(String name) {
+    private String ISBN;
+    private String genre;
+
+
+    public Book(String name,String ISBN) {
         super(name);
     }
 
@@ -13,16 +16,14 @@ public abstract class Book extends Paper implements Borrow{
         System.out.println("Wow this is a good book");
     }
 
-    public void store(){
-        System.out.println("Put this with the books at "+ISBN);
-    }
+    public abstract void store();
 
 
-    public String getISBN() {
-        return ISBN;
-    }
+    public String getISBN() {return ISBN;}
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
-    }
+    public void setISBN(String ISBN) {this.ISBN = ISBN;}
+
+    public String getGenre() {return genre;}
+
+    public void setGenre(String genre) {this.genre = genre;}
 }
