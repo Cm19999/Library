@@ -12,7 +12,7 @@ public class DVD extends Optical{
     }
 
     public void store(){
-        System.out.println("Put this with the other DVDs");
+        System.out.println("You put this with the other DVDs");
     }
 
 
