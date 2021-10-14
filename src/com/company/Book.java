@@ -7,13 +7,9 @@ public abstract class Book extends Paper implements Borrow{
     private String genre;
 
 
-    public Book(String name,String ISBN) {
-        super(name);
+    public Book(String name,String Author,String ISBN){
+        super(name, Author);
         this.ISBN=ISBN;
-    }
-
-    public Book(String name) {
-        super(name);
     }
 
 
@@ -27,7 +23,7 @@ public abstract class Book extends Paper implements Borrow{
         System.out.println("You have borrowed a book");
     }
 
-    public void returnItem() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public void returnItem()  {
 
     }
 

@@ -9,7 +9,7 @@ public class Main {
         ArrayList<String> totalLibraryCollection = new ArrayList<>();
 
 
-        Paperback p1 = new Paperback("DVD","1");
+        Paperback p1 = new Paperback("DVD","Dave","1");
         p1.use();
         p1.store();
         totalLibraryCollection.add(p1.returnItem(p1));
@@ -19,7 +19,7 @@ public class Main {
 
 
 
-        Paperback p2 = new Paperback("yep","2");
+        Paperback p2 = new Paperback("yep","Geoff","2");
         totalLibraryCollection.add(p2.returnItem(p2));
         System.out.println(totalLibraryCollection);
 

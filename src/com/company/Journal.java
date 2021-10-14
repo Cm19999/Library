@@ -2,8 +2,9 @@ package com.company;
 
 public class Journal extends Document implements Borrow{
 
-    Journal(String name){
-        super(name);
+    private String objectType = "Journal";
+    Journal(String name, String Author){
+        super(name,Author);
     }
 
     public void store(){
@@ -19,5 +20,10 @@ public class Journal extends Document implements Borrow{
 
     public void borrowItem(){
         System.out.println("You have borrowed a journal");
+    }
+
+
+    public String returnItem(LibraryArtifact book) {
+        return (objectType+" Name: \""+this.getName()+"\""+" ISBN: " +this.getAuthor());
     }
 }
