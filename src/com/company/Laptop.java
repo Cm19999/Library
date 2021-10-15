@@ -7,8 +7,8 @@ public class Laptop extends Computer implements Borrow{
         super(name);
     }
 
-    public void store(){
-        System.out.println("Put this back with the laptops");
+    public String store(){
+        return "Put this back with the laptops";
     }
 
     public String borrowItem(){

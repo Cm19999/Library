@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class testHardback {
 
-    @org.junit.Test
+    @Test
     public void testReturnBook(){
         Hardback p = new Hardback("book","liam","2");
         assertEquals("not the same", p ,p.returnItem());

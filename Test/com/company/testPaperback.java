@@ -24,4 +24,10 @@ public class testPaperback {
         assertEquals("incorrect output","Put this with the paperback books",p3.store());
     }
 
+    @Test
+    public void testBorrowItem(){
+        Paperback p4= new Paperback("stored","ben","4");
+        assertEquals("incorrect output","You have borrowed a paperback",p4.borrowItem());
+    }
+
 }
