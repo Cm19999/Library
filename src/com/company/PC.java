@@ -6,9 +6,7 @@ public class PC extends Computer{
         super(name);
     }
 
-    public void borrowItem(){};
-
-    public LibraryArtifact returnItem(){
-        return (this);
+    public String use(){
+        return "This PC runs well";
     }
 }

@@ -24,7 +24,8 @@ public class Paperback extends Book implements Borrow{
     public String store(){ return "Put this with the paperback books";}
 
 
-    public void borrowItem()  {
+    public String borrowItem()  {
+        return "You have borrowed a paperback";
 
     }
     public LibraryArtifact returnItem() {

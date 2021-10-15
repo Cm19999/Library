@@ -18,8 +18,10 @@ public class testPaperback {
         assertEquals("incorrect output","Flicks through pages...",p3.use());
     }
 
+    @Test
     public void testStore(){
-        
+        Paperback p3= new Paperback("stored","ben","4");
+        assertEquals("incorrect output","Put this with the paperback books",p3.store());
     }
 
 }

@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public abstract class Physical extends LibraryArtifact implements Borrow{
+public abstract class Physical extends LibraryArtifact{
 
 
 
@@ -18,9 +18,5 @@ public abstract class Physical extends LibraryArtifact implements Borrow{
 
     public abstract String use();
 
-    public abstract void borrowItem();
 
-    //public void returnItem(){
-     //   libraryCollection.add(LibraryArtifact<this.Physical>)
-    //};
 }

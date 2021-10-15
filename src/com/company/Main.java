@@ -15,7 +15,7 @@ public class Main {
         System.out.println(p1.use());
         System.out.println(p1.store());
         totalLibraryCollection.add(p1.returnItem());
-        p1.read();
+        System.out.println(p1.read());
         System.out.println(totalLibraryCollection);
 
 

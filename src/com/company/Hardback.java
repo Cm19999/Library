@@ -19,7 +19,8 @@ public class Hardback extends Book{
     public String store(){ return "Put this with the hardback books";}
 
 
-    public void borrowItem()  {
+    public String borrowItem()  {
+        return "You have borrowed a hardback book";
 
     }
     public Hardback returnItem() {

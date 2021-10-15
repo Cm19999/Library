@@ -13,14 +13,14 @@ public abstract class Book extends Paper implements Borrow{
     }
 
 
-    public void read(){
-        System.out.println("Wow this is a good book");
+    public String read(){
+        return "Wow this is a good book";
     }
 
     public abstract String store();
 
-    public void borrowItem(){
-        System.out.println("You have borrowed a book");
+    public String borrowItem(){
+        return "You have borrowed a book";
     }
 
     public abstract LibraryArtifact returnItem() ;

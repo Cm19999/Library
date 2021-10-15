@@ -22,13 +22,13 @@ public class Journal extends Document implements Borrow{
 
 
 
-    public void read(){
-        System.out.println("What an informative journal");
+    public String use(){
+        return "What an informative journal";
     }
 
 
-    public void borrowItem(){
-        System.out.println("You have borrowed a journal");
+    public String borrowItem(){
+        return "You have borrowed a journal";
     }
 
 

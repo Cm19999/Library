@@ -2,7 +2,7 @@ package com.company;
 
 public interface Borrow {
 
-    void borrowItem();
+    String borrowItem();
 
     LibraryArtifact returnItem();
 }
