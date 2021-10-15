@@ -16,8 +16,8 @@ public class Journal extends Document implements Borrow{
                 '}';
     }
 
-    public void store(){
-            System.out.println("Store this with the other journals");
+    public String store(){
+            return "Store this with the other journals";
         }
 
 

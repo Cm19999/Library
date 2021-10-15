@@ -16,7 +16,7 @@ public class Hardback extends Book{
                 " ISBN='" + this.getISBN() + '\'' +
                 '}';
     }
-    public void store(){ System.out.println("Put this with the hardback books");}
+    public String store(){ return "Put this with the hardback books";}
 
 
     public void borrowItem()  {

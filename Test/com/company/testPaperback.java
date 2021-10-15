@@ -18,4 +18,8 @@ public class testPaperback {
         assertEquals("incorrect output","Flicks through pages...",p3.use());
     }
 
+    public void testStore(){
+        
+    }
+
 }

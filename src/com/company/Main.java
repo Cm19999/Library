@@ -1,5 +1,7 @@
 package com.company;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -11,7 +13,7 @@ public class Main {
 
         Hardback p1 = new Hardback("DVD","Dave","1");
         System.out.println(p1.use());
-        p1.store();
+        System.out.println(p1.store());
         totalLibraryCollection.add(p1.returnItem());
         p1.read();
         System.out.println(totalLibraryCollection);

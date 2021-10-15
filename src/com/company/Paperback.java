@@ -21,7 +21,7 @@ public class Paperback extends Book implements Borrow{
                 '}';
     }
 
-    public void store(){ System.out.println("Put this with the paperback books");}
+    public String store(){ return "Put this with the paperback books";}
 
 
     public void borrowItem()  {
