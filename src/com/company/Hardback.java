@@ -7,14 +7,23 @@ public class Hardback extends Book{
         super(name,Author,ISBN);
     };
 
+
+    @Override
+    public String toString() {
+        return "Hardback{" +
+                " Name= "+this.getName()+'\''+
+                " Author= "+this.getAuthor()+'\''+
+                " ISBN='" + this.getISBN() + '\'' +
+                '}';
+    }
     public void store(){ System.out.println("Put this with the hardback books");}
 
 
     public void borrowItem()  {
 
     }
-    public String returnItem(LibraryArtifact book) {
-        return (objectType+" Name: \""+this.getName()+"\""+" ISBN: " +this.getISBN());
+    public Hardback returnItem() {
+        return (this);
     }
 
 }

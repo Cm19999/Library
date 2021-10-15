@@ -7,11 +7,19 @@ public class Paperback extends Book implements Borrow{
     private String objectType = "Paperback";
 
 
-    Paperback(String name,String Author,String ISBN){
+    public Paperback(String name,String Author,String ISBN){
         super(name,Author,ISBN);
     }
 
 
+    @Override
+    public String toString() {
+        return "Paperback{" +
+                " Name= "+this.getName()+'\''+
+                " Author= "+this.getAuthor()+'\''+
+                " ISBN='" + this.getISBN() + '\'' +
+                '}';
+    }
 
     public void store(){ System.out.println("Put this with the paperback books");}
 
@@ -19,8 +27,8 @@ public class Paperback extends Book implements Borrow{
     public void borrowItem()  {
 
     }
-    public String returnItem(LibraryArtifact book) {
-        return (objectType+" Name: \""+this.getName()+"\" "+"Author: "+this.getAuthor()+" ISBN: " +this.getISBN());
+    public LibraryArtifact returnItem() {
+        return (this);
     }
 
 

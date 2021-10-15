@@ -7,6 +7,15 @@ public class Journal extends Document implements Borrow{
         super(name,Author);
     }
 
+
+    @Override
+    public String toString() {
+        return "Journal{" +
+                " Name= "+this.getName()+'\''+
+                " Author= "+this.getAuthor()+'\''+
+                '}';
+    }
+
     public void store(){
             System.out.println("Store this with the other journals");
         }
@@ -23,7 +32,7 @@ public class Journal extends Document implements Borrow{
     }
 
 
-    public String returnItem(LibraryArtifact book) {
-        return (objectType+" Name: \""+this.getName()+"\""+" ISBN: " +this.getAuthor());
+    public LibraryArtifact returnItem() {
+        return (this);
     }
 }

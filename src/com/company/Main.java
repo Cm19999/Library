@@ -6,13 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<String> totalLibraryCollection = new ArrayList<>();
+        ArrayList<LibraryArtifact> totalLibraryCollection = new ArrayList<>();
 
 
-        Paperback p1 = new Paperback("DVD","Dave","1");
+        Hardback p1 = new Hardback("DVD","Dave","1");
         p1.use();
         p1.store();
-        totalLibraryCollection.add(p1.returnItem(p1));
+        totalLibraryCollection.add(p1.returnItem());
         p1.read();
         System.out.println(totalLibraryCollection);
 
@@ -20,7 +20,7 @@ public class Main {
 
 
         Paperback p2 = new Paperback("yep","Geoff","2");
-        totalLibraryCollection.add(p2.returnItem(p2));
+        totalLibraryCollection.add(p2.returnItem());
         System.out.println(totalLibraryCollection);
 
     }

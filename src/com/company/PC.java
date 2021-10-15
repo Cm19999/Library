@@ -8,5 +8,7 @@ public class PC extends Computer{
 
     public void borrowItem(){};
 
-    public void returnItem(){};
+    public LibraryArtifact returnItem(){
+        return (this);
+    }
 }

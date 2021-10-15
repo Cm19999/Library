@@ -15,8 +15,8 @@ public abstract class Optical extends LibraryArtifact implements Borrow{
         System.out.println("You have borrowed a disc");
     }
 
-    public void returnItem(){
-        System.out.println("You have returned a disc");
+    public LibraryArtifact returnItem(){
+        return (this);
     }
 
     public int getAgeMinimum() {

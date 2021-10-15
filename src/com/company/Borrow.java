@@ -4,5 +4,5 @@ public interface Borrow {
 
     void borrowItem();
 
-    void returnItem() throws ClassNotFoundException, InstantiationException, IllegalAccessException;
+    LibraryArtifact returnItem();
 }

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Document extends Paper{
+public abstract class Document extends Paper{
 
 
     public Document(String name,String Author){
@@ -8,9 +8,6 @@ public class Document extends Paper{
     }
 
 
-    public void borrowItem(){};
-
-    public void returnItem(){};
 
 
 }
