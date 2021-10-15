@@ -4,5 +4,5 @@ public interface Borrow {
 
     void borrowItem();
 
-    void returnItem();
+    LibraryArtifact returnItem();
 }

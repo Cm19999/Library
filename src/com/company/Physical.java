@@ -1,7 +1,16 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public abstract class Physical extends LibraryArtifact implements Borrow{
 
+
+
+
+    public Physical(String name,ArrayList<LibraryArtifact> libraryCollection) {
+        super(name);
+        this.libraryCollection=this.getLibraryCollection();
+    }
 
     public Physical(String name) {
         super(name);
@@ -9,14 +18,9 @@ public abstract class Physical extends LibraryArtifact implements Borrow{
 
     public abstract void use();
 
+    public abstract void borrowItem();
 
-    @Override
-    public void borrowItem() {
-
-    }
-
-    @Override
-    public void returnItem() {
-
-    }
+    //public void returnItem(){
+     //   libraryCollection.add(LibraryArtifact<this.Physical>)
+    //};
 }

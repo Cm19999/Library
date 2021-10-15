@@ -14,5 +14,9 @@ public class Laptop extends Computer implements Borrow{
     public void borrowItem(){
         System.out.println("You have borrowed a laptop");
     }
+
+    public LibraryArtifact returnItem(){
+        return (this);
+    }
 }
 

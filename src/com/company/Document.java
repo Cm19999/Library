@@ -1,10 +1,13 @@
 package com.company;
 
-public class Document extends Paper{
+public abstract class Document extends Paper{
 
-    public Document(String name){
-        super(name);
+
+    public Document(String name,String Author){
+        super(name, Author);
     }
+
+
 
 
 }

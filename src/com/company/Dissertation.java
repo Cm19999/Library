@@ -2,11 +2,18 @@ package com.company;
 
 public class Dissertation extends Document implements Borrow{
 
-
-        Dissertation(String name){
-            super(name);
+    private String objectType = "Dissertation";
+        Dissertation(String name,String Author){
+            super(name,Author);
         }
 
+    @Override
+    public String toString() {
+        return "Dissertation{" +
+                " Name= "+this.getName()+'\''+
+                " Author= "+this.getAuthor()+'\''+
+                '}';
+    }
         public void read(){
             System.out.println("What an informative dissertation");
         }
@@ -18,4 +25,9 @@ public class Dissertation extends Document implements Borrow{
         public void borrowItem(){
             System.out.println("You have borrowed a dissertation");
         }
+
+        @Override
+        public LibraryArtifact returnItem() {
+            return (this);
+    }
 }

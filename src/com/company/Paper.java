@@ -2,11 +2,16 @@ package com.company;
 
 public abstract class Paper extends Physical{
 
-    private String[] Author;
+    private String Author;
     private int pages;
 
-    public Paper(String name) {
+    public Paper(String name, String[] Author) {
         super(name);
+    }
+
+    public Paper (String name, String Author){
+        super(name);
+        this.Author=Author;
     }
 
 
@@ -15,11 +20,11 @@ public abstract class Paper extends Physical{
     }
 
 
-    public String[] getAuthor() {
+    public String getAuthor() {
         return Author;
     }
 
-    public void setAuthor(String[] author) {
+    public void setAuthor(String author) {
         Author = author;
     }
 

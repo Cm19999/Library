@@ -7,8 +7,9 @@ public abstract class Book extends Paper implements Borrow{
     private String genre;
 
 
-    public Book(String name,String ISBN) {
-        super(name);
+    public Book(String name,String Author,String ISBN){
+        super(name, Author);
+        this.ISBN=ISBN;
     }
 
 
@@ -21,6 +22,9 @@ public abstract class Book extends Paper implements Borrow{
     public void borrowItem(){
         System.out.println("You have borrowed a book");
     }
+
+    public abstract LibraryArtifact returnItem() ;
+
 
     public String getISBN() {return ISBN;}
 
