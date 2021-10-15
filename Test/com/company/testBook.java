@@ -6,6 +6,8 @@ import static org.junit.Assert.assertEquals;
 
 public class testBook {
 
-    //@Test
-
+    @Test
+    public void testRead(){
+        //Book b= new Book("book","Gabe","1");
+    }
 }
