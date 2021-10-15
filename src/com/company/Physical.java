@@ -16,7 +16,7 @@ public abstract class Physical extends LibraryArtifact implements Borrow{
         super(name);
     }
 
-    public abstract void use();
+    public abstract String use();
 
     public abstract void borrowItem();
 

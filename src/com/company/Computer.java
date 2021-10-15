@@ -7,7 +7,7 @@ public abstract class Computer extends Physical{
     }
 
 
-    public void use(){
-        System.out.println("The internet is cool");
+    public String use(){
+        return "The internet is cool";
     }
 }

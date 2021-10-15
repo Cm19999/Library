@@ -7,8 +7,8 @@ public class DVD extends Optical{
         super(name);
     }
 
-    public void use(){
-        System.out.println("The picture quality could definitely be better");
+    public String use(){
+        return "The picture quality could definitely be better";
     }
 
     public void store(){

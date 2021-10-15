@@ -6,7 +6,7 @@ public class Audiobook extends Digital{
         super(name);
     }
 
-    public void use(){
-        System.out.println("Wow that sounds very interesting!");
+    public String use(){
+        return "Wow that sounds very interesting!";
     }
 }

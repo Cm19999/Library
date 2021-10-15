@@ -15,8 +15,8 @@ public abstract class Paper extends Physical{
     }
 
 
-    public void use(){
-        System.out.println("Flicks through pages...");
+    public String use(){
+        return  "Flicks through pages...";
     }
 
 

@@ -6,8 +6,8 @@ public class Bluray extends Optical{
         super(name);
     }
 
-    public void use(){
-        System.out.println("Wow that is a really good quality picture");
+    public String use(){
+        return "Wow that is a really good quality picture";
     }
 
     public void store(){
